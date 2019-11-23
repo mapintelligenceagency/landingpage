@@ -1,10 +1,11 @@
-import jQuery from 'jquery';
+import jQuery from 'jquery-easing';
+
 // Start of use strict
 
 const $ = jQuery;
 
 // Smooth scrolling using jQuery easing
-$('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+$('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function scrollingHandler() {
   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
     let target = $(this.hash);
     target = target.length ? target : $(`[name=${this.hash.slice(1)}]`);
