@@ -12,7 +12,7 @@ $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function scrollingHand
     if (target.length) {
       $('html, body').animate({
         scrollTop: (target.offset().top - 70),
-      }, 1000, 'easeInOutExpo');
+      }, 500, 'easeInOutExpo');
       return false;
     }
   }
